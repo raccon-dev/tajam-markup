@@ -20,27 +20,6 @@
           align-items: center;
 }
 
-#main .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#main .menu-item a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  font-size: 17px;
-  margin: 0 1rem;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
-}
-
-#main .menu-item a:hover {
-  color: #00e0d0;
-}
-
 #main #main-page .container {
   height: 85vh;
   display: -webkit-box;
@@ -315,6 +294,118 @@
       align-self: center;
 }
 
+#footer {
+  padding: 100px 0;
+  background: url("/img/footer-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .menu-item a {
+  margin: 0;
+  margin-right: 1rem;
+}
+
+#footer .general-info {
+  width: 40%;
+}
+
+#footer .general-text {
+  color: white;
+  line-height: 26px;
+}
+
+#footer .footer-header-section {
+  height: 50px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .footer-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#footer .footer-contact .contact-icon {
+  padding-right: 20px;
+}
+
+#footer .footer-contact .contact-description {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+#footer .our-studio-info {
+  width: 25%;
+}
+
+#footer .form-touch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .form-touch input {
+  color: white;
+  outline: none;
+  height: 45px;
+  padding: 5px 20px;
+  border: 2px solid rgba(128, 128, 128, 0.555);
+  background-color: transparent;
+}
+
+#footer .form-touch button {
+  width: 70px;
+  height: 45px;
+  opacity: 0.5;
+  background-color: white;
+  border: 1px solid white;
+}
+
+#footer .form-touch button img {
+  margin: 0 auto;
+}
+
+#footer .stay-in-touch {
+  width: 27%;
+}
+
+#footer .copyright-section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+#footer .copyright-text,
+#footer .copyright-text a {
+  color: white;
+  text-decoration: none;
+}
+
 .swiper-pagination-bullet {
   background-color: #00e0d0;
   width: 25px;
@@ -556,6 +647,66 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .general-info,
+  #footer .our-studio-info,
+  #footer .stay-in-touch,
+  #footer .footer-contact {
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #footer .logo {
+    margin: 0 auto;
+  }
+  #footer .contact-icon {
+    margin-bottom: 15px;
+  }
+  #footer .our-studio-info {
+    margin-top: 2rem;
+  }
+  #footer .footer-contact {
+    width: 80%;
+    margin: 1rem 0;
+  }
+  .copyright-section .copyright-text {
+    margin: 1rem 0;
+  }
+  .copyright-section .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .copyright-section .menu-item {
+    margin: 0.8rem 0;
+  }
+  .copyright-section .menu-item a {
+    margin: 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
