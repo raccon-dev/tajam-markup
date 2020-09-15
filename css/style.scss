@@ -52,9 +52,8 @@ $lightBlue: #00e0d0;
 }
 
 #out-story {
-    margin: 100px 0;
-
     .container {
+        margin: 100px auto;
         display: flex;
         justify-content: space-between;
     }
@@ -79,8 +78,33 @@ $lightBlue: #00e0d0;
         line-height: 22px;
         opacity: 0.75;
     }
-    .btn-our-story{
+    .btn-our-story {
         margin: 1rem 0;
+    }
+    #watch-our-story {
+        background: url("/img/video-background.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        .play-video-link {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .icon-play{
+            margin: 1.5rem 0;
+        }
+        .play-text {
+            color: white;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 700;
+        }
     }
 }
 
@@ -127,21 +151,20 @@ $lightBlue: #00e0d0;
     .swiper-pagination-fraction {
         bottom: 1rem;
     }
-    #out-story{
-        .container{
+    #out-story {
+        .container {
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            
         }
-        .info-container{
+        .info-container {
             width: 90%;
         }
-        .image-container{
+        .image-container {
             width: 50%;
         }
-        .section-title{
+        .section-title {
             margin: 1rem 0;
         }
     }
@@ -231,5 +254,4 @@ $lightBlue: #00e0d0;
             }
         }
     }
-
 }
