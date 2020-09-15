@@ -40,7 +40,11 @@ body {
 .disable-scroll {
     overflow-y: hidden;
 }
-
+.cards {
+    margin: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
 .card {
     width: 33.3%;
     padding: 3rem;
@@ -49,7 +53,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .card-image{
+    .card-image {
         margin: 1rem 0;
     }
     .card-title {

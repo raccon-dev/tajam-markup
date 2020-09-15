@@ -102,17 +102,57 @@ $lightBlue: #00e0d0;
 
 #expertise {
     margin: 100px 0;
-    .cards {
-        margin: 3rem 0;
-        display: flex;
-        flex-wrap: wrap;
-    }
+
     .card:nth-child(3n + 2) {
         border-right: 2px solid rgba(128, 128, 128, 0.171);
         border-left: 2px solid rgba(128, 128, 128, 0.171);
     }
     .card:nth-child(n + 4) {
         border-top: 2px solid rgba(128, 128, 128, 0.171);
+    }
+}
+
+#team {
+    text-align: center;
+    padding: 100px 0;
+    background: url("/img/team-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .title-container,
+    .title-description {
+        color: white;
+    }
+    .cards {
+        justify-content: space-between;
+    }
+    .card {
+        width: 22%;
+        margin: 0 1%;
+        padding: 0;
+        border: 2px solid rgba(128, 128, 128, 0.171);
+    }
+    .card-image {
+        width: 100%;
+        margin: 0;
+    }
+    .card-title {
+        color: #fff;
+    }
+    .card-subtitle {
+        opacity: 0.7;
+        color: #fafafa;
+        font-weight: 300;
+        margin: 1rem 0;
+    }
+    .gray-text {
+        color: #cfcaca;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .btn-hirring{
+        margin-top: 3rem;
     }
 }
 
@@ -186,6 +226,14 @@ $lightBlue: #00e0d0;
         }
         .card:nth-child(2n + 1) {
             border-right: unset !important;
+        }
+    }
+    #team {
+        .cards {
+            padding: 0 2rem;
+        }
+        .card {
+            width: 100% !important;
         }
     }
 }
@@ -287,6 +335,12 @@ $lightBlue: #00e0d0;
         }
         .card:nth-child(2n + 1) {
             border-right: 2px solid rgba(128, 128, 128, 0.171);
+        }
+    }
+    #team {
+        .card {
+            margin: 1.5rem 0;
+            width: 48%;
         }
     }
 }
