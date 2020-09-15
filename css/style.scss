@@ -51,6 +51,39 @@ $lightBlue: #00e0d0;
     }
 }
 
+#out-story {
+    margin: 100px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .image-container {
+        width: 40%;
+    }
+    .section-title {
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: 500;
+    }
+    .big-logo {
+        margin: 0 auto;
+    }
+    .info-container {
+        width: 60%;
+    }
+    .story-text {
+        padding: 10px 0;
+        color: #413d4b;
+        font-weight: 300;
+        line-height: 22px;
+        opacity: 0.75;
+    }
+    .btn-our-story{
+        margin: 1rem 0;
+    }
+}
+
 // swiper custom style
 .swiper-pagination-bullet {
     background-color: $lightBlue;
@@ -80,7 +113,6 @@ $lightBlue: #00e0d0;
             font-size: 17px !important;
             padding: 1rem 0 !important;
         }
-
     }
 }
 
@@ -94,6 +126,24 @@ $lightBlue: #00e0d0;
     .swiper-pagination-custom,
     .swiper-pagination-fraction {
         bottom: 1rem;
+    }
+    #out-story{
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .info-container{
+            width: 90%;
+        }
+        .image-container{
+            width: 50%;
+        }
+        .section-title{
+            margin: 1rem 0;
+        }
     }
 }
 
@@ -181,4 +231,5 @@ $lightBlue: #00e0d0;
             }
         }
     }
+
 }
