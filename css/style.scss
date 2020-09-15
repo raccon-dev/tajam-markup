@@ -124,6 +124,7 @@ $lightBlue: #00e0d0;
     .title-description {
         color: white;
     }
+
     .cards {
         justify-content: space-between;
     }
@@ -137,7 +138,9 @@ $lightBlue: #00e0d0;
         width: 100%;
         margin: 0;
     }
-
+    .card .card-title {
+        color: white;
+    }
     .gray-text {
         color: #cfcaca;
         font-size: 18px;
@@ -158,6 +161,7 @@ $lightBlue: #00e0d0;
     }
     .title-description {
         font-size: 18px;
+        text-decoration: none;
     }
     .our-works-image {
         width: 100%;
@@ -190,6 +194,44 @@ $lightBlue: #00e0d0;
         font-size: 19px;
         font-weight: 400;
         line-height: 26px;
+    }
+}
+#contact-us {
+    margin: 100px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .section-title {
+        padding-bottom: 20px;
+    }
+    .form-contact-us {
+        width: 50%;
+    }
+    .form-contact-us {
+        input,
+        textarea {
+            padding: 10px 20px;
+            width: 100%;
+            color: #413d4b;
+            font-size: 18px;
+            font-weight: 300;
+            border: 2px solid rgba(128, 128, 128, 0.171);
+            margin: 0.5rem 0;
+            resize: none;
+        }
+    }
+    .our-happy-clients {
+        width: 40%;
+    }
+    .companies {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .company {
+        width: 50%;
+        padding: 1.5rem 0;
+        align-self: center;
     }
 }
 
@@ -280,6 +322,18 @@ $lightBlue: #00e0d0;
         .title-description {
             margin: 1rem 0;
         }
+    }
+    #contact-us {
+
+        .form-contact-us,
+        .our-happy-clients {
+            width: 90% !important;
+        }
+        .company{
+            width: 100%;
+        }
+
+
     }
 }
 
@@ -386,6 +440,30 @@ $lightBlue: #00e0d0;
         .card {
             margin: 1.5rem 0;
             width: 48%;
+        }
+    }
+    #contact-us {
+        text-align: center;
+        .container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-contact-us {
+            margin-bottom: 3rem;
+        }
+        .form-contact-us,
+        .our-happy-clients {
+            width: 60%;
+        }
+
+        .companies {
+            justify-content: center;
+            align-items: center;
+        }
+        .company {
+            display: flex;
+            justify-content: center;
         }
     }
 }

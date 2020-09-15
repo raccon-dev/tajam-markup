@@ -184,6 +184,10 @@
   margin: 0;
 }
 
+#team .card .card-title {
+  color: white;
+}
+
 #team .gray-text {
   color: #cfcaca;
   font-size: 18px;
@@ -211,6 +215,7 @@
 
 #our-works .title-description {
   font-size: 18px;
+  text-decoration: none;
 }
 
 #our-works .our-works-image {
@@ -255,6 +260,59 @@
   font-size: 19px;
   font-weight: 400;
   line-height: 26px;
+}
+
+#contact-us {
+  margin: 100px 0;
+}
+
+#contact-us .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact-us .section-title {
+  padding-bottom: 20px;
+}
+
+#contact-us .form-contact-us {
+  width: 50%;
+}
+
+#contact-us .form-contact-us input,
+#contact-us .form-contact-us textarea {
+  padding: 10px 20px;
+  width: 100%;
+  color: #413d4b;
+  font-size: 18px;
+  font-weight: 300;
+  border: 2px solid rgba(128, 128, 128, 0.171);
+  margin: 0.5rem 0;
+  resize: none;
+}
+
+#contact-us .our-happy-clients {
+  width: 40%;
+}
+
+#contact-us .companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact-us .company {
+  width: 50%;
+  padding: 1.5rem 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .swiper-pagination-bullet {
@@ -342,6 +400,13 @@
   }
   #our-works .title-description {
     margin: 1rem 0;
+  }
+  #contact-us .form-contact-us,
+  #contact-us .our-happy-clients {
+    width: 90% !important;
+  }
+  #contact-us .company {
+    width: 100%;
   }
 }
 
@@ -453,6 +518,44 @@
   #team .card {
     margin: 1.5rem 0;
     width: 48%;
+  }
+  #contact-us {
+    text-align: center;
+  }
+  #contact-us .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contact-us .form-contact-us {
+    margin-bottom: 3rem;
+  }
+  #contact-us .form-contact-us,
+  #contact-us .our-happy-clients {
+    width: 60%;
+  }
+  #contact-us .companies {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contact-us .company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
