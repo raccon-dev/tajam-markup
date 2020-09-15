@@ -205,6 +205,30 @@
   margin-top: 3rem;
 }
 
+#our-works {
+  margin: 100px 0;
+  text-align: center;
+}
+
+#our-works .title-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#our-works .title-description {
+  font-size: 18px;
+}
+
+#our-works .our-works-image {
+  width: 100%;
+  margin: 4rem 0;
+}
+
 .swiper-pagination-bullet {
   background-color: #00e0d0;
   width: 25px;
@@ -281,6 +305,15 @@
   }
   #team .card {
     width: 100% !important;
+  }
+  #our-works .title-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #our-works .title-description {
+    margin: 1rem 0;
   }
 }
 

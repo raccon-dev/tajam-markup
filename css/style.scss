@@ -151,8 +151,25 @@ $lightBlue: #00e0d0;
         font-size: 18px;
         font-weight: 300;
     }
-    .btn-hirring{
+    .btn-hirring {
         margin-top: 3rem;
+    }
+}
+
+#our-works {
+    margin: 100px 0;
+    text-align: center;
+    .title-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .title-description {
+        font-size: 18px;
+    }
+    .our-works-image{
+        width: 100%;
+        margin: 4rem 0;
     }
 }
 
@@ -234,6 +251,14 @@ $lightBlue: #00e0d0;
         }
         .card {
             width: 100% !important;
+        }
+    }
+    #our-works{
+        .title-container{
+            flex-direction: column;
+        }
+        .title-description{
+            margin: 1rem 0;
         }
     }
 }
